@@ -5,4 +5,7 @@
     android:layout_width="match_parent"
     tools:text="Mount Everest"
     android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:background="@color/cool_color"
+    android:layout_marginVertical="2dp"
     android:padding="25dp"/>
