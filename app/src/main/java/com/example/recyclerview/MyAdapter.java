@@ -1,5 +1,7 @@
 package com.example.recyclerview;
 
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -10,17 +12,18 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
-    List mountains = Arrays.asList("Kebnekaise", "Kinnekulle", "Billingen", "Matterhorn", "Mount Everest");
+    List<String> mountains = Arrays.asList("Kebnekaise", "Kinnekulle", "Billingen", "Matterhorn", "Mount Everest");
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_mountain, parent, false);
+        return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+        holder.name.setText(mountains.get(position));
     }
 
     @Override
