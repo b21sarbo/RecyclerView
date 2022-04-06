@@ -20,3 +20,34 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
+
+/*
+ArrayList<RecyclerViewItem> items = new ArrayList<>(Arrays.asList(
+        new RecyclerViewItem("Matterhorn"),
+        new RecyclerViewItem("Mont Blanc"),
+        new RecyclerViewItem("Denali")
+));
+*/
+
+/* string istället för recyclerviewitem, arrays.aslists istället för new arraylist och <> */
+
+/*
+RecyclerViewAdapter adapter = new RecyclerViewAdapter(this, items, new RecyclerViewAdapter.OnClickListener() {
+    @Override
+    public void onClick(RecyclerViewItem item) {
+        Toast.makeText(MainActivity.this, item.getTitle(), Toast.LENGTH_SHORT).show();
+    }
+});
+ */
+
+/* onbind istället för onclick. holder istället för adapter?  */
+
+/*
+RecyclerView view = findViewById(R.id.recycler_view);
+view.setLayoutManager(new LinearLayoutManager(this));
+view.setAdapter(adapter);
+ */
+
+
+
+/* 5 ist 3 mountains.  */
